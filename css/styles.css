@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    background-color: #fafafa;
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    margin-top: calc((15vw/1220)*100);
+}
+#banner-container,
+.form-container{
+    flex: 1 1 0;
+    width: 50%;
+
+}
+#banner-container {
+    text-align: right;
+    
+}
+#banner-container img{
+    text-align: right;
+    width: 100%;
+    margin-top: calc((10vw/1280)*100);
+    margin-right: calc((15vw/1280)*100);
+    max-width: calc((380vw/1280)*100);
+}
+.form-container{
+    text-align: center;
+}
+.form-box{
+    background-color: #fff;
+    border: calc(1vw*100/1280) solid #dbdbdb;
+    width: calc(350vw/1280*100);
+    margin-top: 1.5vw;
+}   
+#logo-insta{
+    width: calc((175vw/1280)*100);
+    height: calc((53vw/1280)*100);
+    margin-top: calc((30vw/1280)*100) ;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: calc((12vw/1280)*100) ;
+}
+#login-form{
+    margin-top: calc((20vw/1280)*100);
+}
+#login-form input{
+    display: block;
+    font-size: calc((12vw/1280)*100);
+    padding-top: calc((12vw/1280)*100);
+    padding-right: calc((9vw/1280)*100);
+    padding-bottom: calc((12vw/1280)*100);
+    padding-left: calc((9vw/1280)*100);
+    background-color: #fafafa;
+    border: calc((1vw/1280)*100);
+    border-radius: calc((3/1280)*100);
+    width: calc((268vw/1280)*100);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc((5vw/1280)*100);
+    margin-bottom: calc((5vw/1280)*100);
+}
+#login-form input[type='submit']{
+    background-color: #b2dffc;
+    color: #fff;
+    margin-top: calc((15vw/1280)*100);
+    border-radius: calc((5vw/1280)*100);
+    height: calc((30vw/1280)*100);
+    font-size: calc((13vw/1280)*100);
+    padding: 0;
+    font-weight: bold;
+}
+.separator{
+    position: relative;
+   
+}
+.line{
+    border-top: calc((1vw/1280)*100) solid #dbdbdb;
+    width: calc((268vw/1280)*100) ;
+    margin-top: calc((25vw/1280)*100);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: calc((35vw/1280)*100);
+}
+.separator span{
+    position: absolute;
+    background-color: #fff;
+    color: #bbb;
+    top: calc((-6vw/1280)*100);
+    text-transform: uppercase;
+    font-size: 1vw;
+    width: auto;
+    text-align: center;
+    left: calc((173vw/1280)*100);
+  
+
+  
+}
+.facebook-login{
+    margin-bottom: calc((25vw/1280)*100);
+}
+
+.facebook-login a{
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.facebook-login img{
+    width:  calc((16vw/1280)*100);
+    height:  calc((16vw/1280)*100);
+    margin-right: calc((8vw/1280)*100) ;
+    /* margin-right: calc((8vw/1280)*100); */
+}
+.facebook-login span{
+    font-size: calc((13vw/1280)*100) ;
+    font-weight: bold;
+    margin-top:((1vw/1280)*100) ;;
+}
+#forgot-pass{
+    margin-bottom: calc((12vw/1280)*100);
+    font-size: calc((12vw/1280)*100);
+}
+#forgot-pass a{
+    text-decoration: none;
+    color: #373799;
+}
+#register-container{
+    background-color: #fff;
+    border: calc((1vw/1280)*100) solid #DBDBDB;
+    width: calc((350vw/1280)*100);
+    margin-top: calc((10vw/1280)*100);
+    padding: calc((25vw/1280)*100);
+
+}
+#register-container p {
+    font-size: calc((14vw/1280)*100);
+    color: #262626;
+    
+}
+#register-container a {
+    font-size: calc((14vw/1280)*100);
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+#get-app-container{
+    text-align: center;
+    width: calc((350vw/1280)*100);
+}
+#get-app-container p{
+    margin: calc((20vw/1280)*100) 0;
+    font-size: 13px;
+}
+#get-app-container img{
+   width: calc((136vw/1280)*100) ;
+   height:calc((40vw/1280)*100) ;
+}
+#get-app-container a{
+    text-decoration: none;
+}
+footer{
+    text-align: left;
+    width: calc((1000vw/1280)*100);
+    margin: calc((50vw/1280)*100) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-links{
+    list-style: none;
+    display: flex;
+
+}
+#footer-links li{
+    margin-right: calc((10vw/1280)*100);
+}
+#copyright,
+#footer-links a{
+    font-size: calc((12vw/1280)*100);
+    color: #8e8e8e;
+    font-size: calc((12vw/1280)*100);
+}
+#copyright{
+    margin-top: calc((10vw/1280)*100);
+}
+@media (max-width: 450px){
+
+    body{
+        background-color: #fff;
+
+    }
+    #banner-container{
+        display: none;
+    }
+    .main-container{
+        margin-top: 2vw;
+    }
+    .form-container,
+    .form-box,
+    #register-container,
+    #get-app-container,
+    .form-box{
+        width: 100%;
+        border: none;
+    }
+    footer nav{
+        width: 90vw;
+    }
+    #footer-links{
+       
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   #login-form input{
+        width: 60vw;
+        height: 10vw;
+        font-size: 2.5vw;
+    }
+    #login-form input[type="submit"]{
+        width: 60vw;
+        height: 7vw;
+        font-size: 2.5vw;
+    }
+   #logo-insta{
+        width: 60vw;
+        height: 18.2vw;
+        font-size: 2vw;
+    }
+    #footer-links ul{
+        width: 90vw;
+    }
+    #footer-links li{
+        margin-right: 1vw;
+        line-height: 2vw;
+    }
+    #footer-links li a,
+    #copyright{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .separator span{
+   
+    font-size: 2.3vw;
+    left: 48.35vw;
+    top: -1vw;
+    
+      
+}
+
+    .line{
+    border-top: 1px solid #dbdbdb;
+    width: 60vw;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+    left: 45;
+}
+.facebook-login span{
+    font-size: 3vw;
+}
+.facebook-login img{
+    width: 3vw;
+    height: 3vw;
+}
+#register-container p,
+#register-container a,
+#forgot-pass,
+#get-app-container p{
+    font-size: 2.5vw;
+}
+#get-app-container a img{
+   width: 30vw;
+   height:8.8vw;
+}
+}
